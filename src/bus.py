@@ -14,4 +14,10 @@ class Bus:
     def pick_up(self, person):
         self.passengers.append(person)
     
+    def drop_off(self, person):
+        self.passengers.remove(person)
+    
+    def empty(self):
+        self.passengers = []
+
         
